@@ -94,3 +94,43 @@ VALUES ("台中市中港路_麥當勞");
 
 INSERT INTO Restaurant (Address)
 VALUES ("台中市公益路_爭鮮");
+
+# 加入餐點
+INSERT INTO Food (FoodName,UnitPrice)
+VALUES ("水餃", 50);
+
+INSERT INTO Food (FoodName,UnitPrice)
+VALUES ("鍋貼", 50);
+
+INSERT INTO Food (FoodName,UnitPrice)
+VALUES ("酸辣湯", 30);
+
+INSERT INTO Food (FoodName,UnitPrice)
+VALUES ("牛排套餐", 650);
+
+INSERT INTO Food (FoodName,UnitPrice)
+VALUES ("豬排戰斧套餐", 630);
+
+INSERT INTO Food (FoodName,UnitPrice)
+VALUES ("燒賣", 80);
+
+INSERT INTO Food (FoodName,UnitPrice)
+VALUES ("流沙包", 75);
+
+INSERT INTO Food (FoodName, UnitPrice)
+VALUES ("大麥克餐", 135);
+
+INSERT INTO Food (FoodName, UnitPrice)
+VALUES ("麥香雞餐", 105);
+
+INSERT INTO Food (FoodName, UnitPrice)
+VALUES ("滿福堡餐", 95);
+
+INSERT INTO Food (FoodName, UnitPrice)
+VALUES ("鮭魚親子丼飯", 100);
+
+INSERT INTO Food (FoodName, UnitPrice)
+VALUES ("稻禾玉子壽司組合", 85);
+
+INSERT INTO Food (FoodName, UnitPrice)
+VALUES ("茶碗蒸", 30);
