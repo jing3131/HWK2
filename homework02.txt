@@ -160,3 +160,19 @@ VALUES (2, "羅小姐", "台中市東大路");
 
 INSERT INTO Employee (GroupID, Name, Address)
 VALUES (3, "傅先生", "台中市福星路");
+
+# 加入訂單
+INSERT INTO Orders (GroupID, OrderDate, RestaurantID)
+VALUES (1, "2020-07-29", 3);
+
+INSERT INTO Orders (GroupID, OrderDate, RestaurantID)
+VALUES (2, "2020-07-31", 5);
+
+INSERT INTO Orders (GroupID, OrderDate, RestaurantID)
+VALUES (3, "2020-08-07", 4);
+
+INSERT INTO Orders (GroupID, OrderDate, RestaurantID)
+VALUES (3, "2020-08-03", 2);
+
+INSERT INTO Orders (GroupID, OrderDate, RestaurantID)
+VALUES (1, "2020-08-10", 1);
