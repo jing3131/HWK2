@@ -54,3 +54,27 @@ CREATE TABLE Orders(
     RestaurantID int not null
 );
 
+# 建立關聯
+ALTER TABLE Employee
+ADD CONSTRAINT fk_emp_grp
+FOREIGN KEY (GroupID) REFERENCES Groups(GroupID);
+
+ALTER TABLE Orders
+ADD CONSTRAINT fk_odr_grp
+FOREIGN KEY (GroupID) REFERENCES Groups(GroupID);
+
+ALTER TABLE Orders
+ADD CONSTRAINT fk_odr_rest
+FOREIGN KEY (RestaurantID) REFERENCES Restaurant(RestaurantID);
+
+ALTER TABLE Orderdetail
+ADD CONSTRAINT fk_odrdtl_odr
+FOREIGN KEY (OrderID) REFERENCES Orders(OrderID);
+
+ALTER TABLE Orderdetail
+ADD CONSTRAINT fk_odrdtl_rest
+FOREIGN KEY (RestaurantID) REFERENCES Restaurant(RestaurantID);
+
+ALTER TABLE Orderdetail
+ADD CONSTRAINT fk_odrdtl_fd
+FOREIGN KEY (FoodID) REFERENCES Food(FoodID);
