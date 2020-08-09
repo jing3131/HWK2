@@ -144,3 +144,19 @@ VALUES ("人力資源處");
 
 INSERT INTO Groups (GroupName)
 VALUES ("系統維護處");
+
+# 加入員工
+INSERT INTO Employee (GroupID, Name, Address)
+VALUES (1, "陳先生", "台中市文心路");
+
+INSERT INTO Employee (GroupID, Name, Address)
+VALUES (1, "王小姐", "台中市大墩路");
+
+INSERT INTO Employee (GroupID, Name, Address)
+VALUES (2, "林小姐", "台中市三民路");
+
+INSERT INTO Employee (GroupID, Name, Address)
+VALUES (2, "羅小姐", "台中市東大路");
+
+INSERT INTO Employee (GroupID, Name, Address)
+VALUES (3, "傅先生", "台中市福星路");
