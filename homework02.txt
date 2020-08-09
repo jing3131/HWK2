@@ -191,3 +191,6 @@ SELECT * FROM groups;
 SELECT * FROM orderdetail;
 SELECT * FROM orders;
 SELECT * FROM restaurant;
+
+SELECT RestaurantID, od.FoodID, Quantity, FoodName, UnitPrice, (UnitPrice * Quantity) AS Total FROM orderdetail as od
+JOIN food AS f on f.FoodID = od.FoodID;
