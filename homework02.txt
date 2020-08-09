@@ -176,3 +176,25 @@ VALUES (3, "2020-08-03", 2);
 
 INSERT INTO Orders (GroupID, OrderDate, RestaurantID)
 VALUES (1, "2020-08-10", 1);
+
+# 加入訂單明細
+INSERT INTO OrderDetail (OrderID, RestaurantID, FoodID, Quantity)
+VALUES (1, 3, 6, 2);
+
+INSERT INTO OrderDetail (OrderID, RestaurantID, FoodID, Quantity)
+VALUES (1, 3, 7, 3);
+
+INSERT INTO OrderDetail (OrderID, RestaurantID, FoodID, Quantity)
+VALUES (2, 5, 12, 3);
+
+INSERT INTO OrderDetail (OrderID, RestaurantID, FoodID, Quantity)
+VALUES (3, 4, 8, 5);
+
+INSERT INTO OrderDetail (OrderID, RestaurantID, FoodID, Quantity)
+VALUES (4, 2, 4, 1);
+
+INSERT INTO OrderDetail (OrderID, RestaurantID, FoodID, Quantity)
+VALUES (5, 1, 2, 5);
+
+INSERT INTO OrderDetail (OrderID, RestaurantID, FoodID, Quantity)
+VALUES (5, 1, 3, 3);
