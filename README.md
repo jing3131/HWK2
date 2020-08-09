@@ -7,9 +7,9 @@ cy公司打算建立一個訂便當的系統，流程可隨意安排
 
 
 
-建立資料庫
+# 建立資料庫
 
-建立資料表
+# 建立資料表
 Restaurant : RestaurantID, Address
 Food : FoodID, FoodName, UnitPrice
 Groups : GroupID, GroupName
@@ -17,7 +17,7 @@ Employee : EmployeeID, GroupID, Name, Address
 OrderDetail : OrdersID, RestaurantID, FoodID, Quantity
 Orders : OrderID, GroupID, OrderDate, RestaurantID
 
-建立關聯
+# 建立關聯
 	- fk_emp_grp		→ 員工與組別之關聯
 	- fk_odr_grp		→ 訂單與組別之關聯
 	- fk_odr_rest		→ 訂單與餐廳之關聯
@@ -25,9 +25,9 @@ Orders : OrderID, GroupID, OrderDate, RestaurantID
 	- fk_odrdtl_rest	→ 訂單明細與餐廳之關聯
 	- fk_odrdtl_fd		→ 訂單明細與食物之關聯
 	
-加入餐廳
-加入餐點
-加入員工組別
-加入員工
-加入訂單
-## 加入訂單明細
+# 加入餐廳
+# 加入餐點
+# 加入員工組別
+# 加入員工
+# 加入訂單
+# 加入訂單明細
