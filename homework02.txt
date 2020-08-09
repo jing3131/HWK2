@@ -1,0 +1,56 @@
+cy公司打算建立一個訂便當的系統，流程可隨意安排
+1. 建立一個資料庫 create database~~~~~ 新增資料
+有哪些廠商，
+2. 新增幾筆會員，幾個菜單，種類，可加入外鍵
+3. 最後下一個簡單的select句子(select * from ~~~)
+
+
+Restaurant : RestaurantID, Address
+Food : FoodID, FoodName, UnitPrice
+Groups : GroupID, GroupName
+Employee : EmployeeID, GroupID, Name, Address
+OrderDetail : OrdersID, RestaurantID, FoodID, Quantity
+Orders : OrderID, GroupID, OrderDate, RestaurantID
+
+# 建立資料庫
+CREATE DATABASE cyDinbendon;
+USE cyDinbendon;
+
+# 建立資料表
+CREATE TABLE Restaurant(
+    RestaurantID int AUTO_INCREMENT PRIMARY KEY,   
+   	Address varchar(30)
+);
+
+CREATE TABLE Food(
+    FoodID int AUTO_INCREMENT PRIMARY KEY,
+    FoodName varchar(15) not null,
+    UnitPrice int not null
+);
+
+CREATE TABLE Groups(
+    GroupID int AUTO_INCREMENT PRIMARY KEY,
+    GroupName varchar(15) not null
+);
+
+CREATE TABLE Employee(
+    EmployeeID int AUTO_INCREMENT PRIMARY KEY,
+    GroupID int not null,
+    Name varchar(10) not null,
+    Address varchar(30)
+);
+
+CREATE TABLE OrderDetail(
+    OrderID int not null,
+    RestaurantID int not null,
+    FoodID int not null,
+    Quantity int not null    
+);
+
+CREATE TABLE Orders(
+    OrderID int AUTO_INCREMENT PRIMARY KEY,
+    GroupID int not null,
+    OrderDate date not null,
+    RestaurantID int not null
+);
+
