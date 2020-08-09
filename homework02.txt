@@ -134,3 +134,13 @@ VALUES ("稻禾玉子壽司組合", 85);
 
 INSERT INTO Food (FoodName, UnitPrice)
 VALUES ("茶碗蒸", 30);
+
+# 加入員工組別
+INSERT INTO Groups (GroupName)
+VALUES ("技術研發處");
+
+INSERT INTO Groups (GroupName)
+VALUES ("人力資源處");
+
+INSERT INTO Groups (GroupName)
+VALUES ("系統維護處");
