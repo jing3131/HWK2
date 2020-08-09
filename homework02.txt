@@ -78,3 +78,19 @@ FOREIGN KEY (RestaurantID) REFERENCES Restaurant(RestaurantID);
 ALTER TABLE Orderdetail
 ADD CONSTRAINT fk_odrdtl_fd
 FOREIGN KEY (FoodID) REFERENCES Food(FoodID);
+
+# 加入餐廳
+INSERT INTO Restaurant (Address)
+VALUES ("台中市河南路_八方雲集");
+
+INSERT INTO Restaurant (Address)
+VALUES ("台中市市政北二路_王品牛排");
+
+INSERT INTO Restaurant (Address)
+VALUES ("台中市朝富路_點點心");
+
+INSERT INTO Restaurant (Address)
+VALUES ("台中市中港路_麥當勞");
+
+INSERT INTO Restaurant (Address)
+VALUES ("台中市公益路_爭鮮");
